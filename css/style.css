@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Rubik',sans-serif;
+}
+.header{
+    display:flex;
+    background-color:red;
+    color:white;
+    justify-content: space-between;
+
+}
+.lside{
+width:25%;
+display:flex;
+justify-content:flex-end;
+border-right:2px solid white;
+align-items:center;
+padding:1rem;
+
+
+}
+.lside a{
+color:white;
+text-decoration: none;
+margin-left:0.3rem;
+}
+.rside{
+width:75%;
+display:flex;
+justify-content: space-between;
+align-items:center;
+margin-left:1rem;
+margin-right:3rem;
+}
+.nav{
+    display:flex;
+    background-color:#fff;
+}
+.lnav{
+width:28%;
+display:flex;
+justify-content: space-around;
+align-items:center;
+font-size:0.9rem;
+}
+.rnav{
+width:70%;
+display:flex;
+align-items: center;
+justify-content:center;
+
+}
+.rnav li{
+    list-style-type: none;
+    margin-left:0.8rem;
+}
+.rnav a{
+    text-decoration:none;
+    color:black;
+    font-size:0.9rem;
+}
+.rnav a:hover{
+    color:red;
+}
+.top{
+ background-color:antiquewhite;
+    height:80vh;
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.aboutus{
+    background-color:#dae6f3;
+    margin:5rem 0;
+    display:flex;
+    padding:3rem;
+    
+}
+.aboutleft{
+    padding:2px;
+    margin-left:4rem;
+}
+.aboutright{
+    margin-right:4rem;
+}
+.aboutleft h3{
+    color:red;
+    font-size:2rem;
+    padding-bottom:1.5rem;
+}
+.aboutleft p{
+    font-size:larger;
+    padding-bottom:2rem;
+}
+.aboutleft button{
+    background-color:red;
+    border-radius:50rem;
+    color:white;
+    width:15vw;
+    outline:none;
+    padding:0.8rem;
+    font-weight: bolder;
+    font-size:1rem;
+}
+/*Phone view*/
+@media(max-width:600px){
+.container{
+    background-color: blue;
+}
+.header{
+    display:none;
+}
+.nav{
+    display:flex;
+   
+}
+.lnav{
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+}
+.rnav{
+  display:none;
+}
+.aboutus{
+    display:flex;
+    flex-direction:column;
+    
+}
+.aboutleft{
+    width:70%;
+}
+.aboutright{
+    width:100%;
+}
+.aboutus img{
+    width:100%;
+}
+.aboutleft button{
+width:70%;
+}
+
+}
